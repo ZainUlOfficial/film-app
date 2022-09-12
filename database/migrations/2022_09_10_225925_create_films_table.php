@@ -25,17 +25,6 @@ return new class extends Migration
         });
     }
 
-
-    // Name
-    // Description
-    // Release Date
-    // Rating
-    // Ticket Price
-    // Country
-    // Genre
-    // Photo
-
-
     /**
      * Reverse the migrations.
      *

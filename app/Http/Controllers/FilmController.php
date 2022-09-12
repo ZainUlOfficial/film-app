@@ -10,11 +10,17 @@ class FilmController extends Controller
     /**
      * Display a listing of the resource.
      *
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\JsonResponse
      */
     public function index()
     {
-        //
+        $films = Film::all();
+
+        return response()->json([
+            'status' => true,
+            'message' => 'all films',
+            'data' => $films
+        ]);
     }
 
     /**
